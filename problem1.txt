@@ -1,0 +1,33 @@
+
+bash script
+#points		Time(s)	    Estimated value	Deviation(absolute)	  %error
+10       	 0.114         3.60000000        0.4584073464            14.59155903
+100      	 1.010         3.04000000        0.1015926535            3.2337946
+1000     	 9.852         3.17200000        0.0304073464            0.9678958975
+10000    	 96.342        3.15880000        0.0172073464            0.5477268474
+
+
+C
+#points		Time(s)	    Estimated value	Deviation(absolute)	  %error
+10       	 0.006         2.80000           0.3415926536            10.87323187
+100      	 0.006         3.32000           0.1784073464            5.678882213
+1000     	 0.006         3.12400           0.0175926536            0.5599915562
+10000            0.004         3.14480           0.0032073464            0.1020930068
+
+
+1.1
+For bush, I was able to compute 10000 points with 96.342 seconds which is nearly 100 seconds.
+For C program, I was able to compute 10000000000000 points with 46.167 seconds, I could not get 
+to 100 seconds, if I increase more digits than 10000000000000, I got 0 for the value of pi.
+
+1.2
+Compiled implementation was enormously faster than bash script. That was because 
+interpreted language like bash has to be read and interpreted to machine instructions at runtime, which
+makes bash program slow.
+
+1.3
+C program was more accurate. I assume this was because of the difference of random number
+generator. C program was more accurate which implies GSl random number generater was more
+truly random than bash env random number generator.
+
+
