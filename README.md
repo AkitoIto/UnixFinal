@@ -20,4 +20,14 @@ C program: mighty.c
 input file: foo.c
 
 
-Problem 4
+Problem 4:
+C program: signal.c
+
+Bonus Questions:
+I worked on B2 and B3
+
+B2:
+C program: b2.c
+
+B3:
+C program: b3.c
